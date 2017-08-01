@@ -1,0 +1,41 @@
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+}
+
+
+.line-full {
+	width: 100%;
+}
+
+.line-part {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.wrapper {
+	position: relative;
+}
+
+/*elements */
+ul {
+	margin: 0;
+	padding: 0;
+}

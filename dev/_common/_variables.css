@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700');
+/*@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300,700);*/
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&subset=cyrillic');
+@font-face {
+    font-family: CoreSans;
+    src: url(../f/CoreSansD75Black.otf);
+}
+
+/* Typography */
+$fontHeader:			'CoreSans', serif;
+$fontMain:				'Roboto', Helvetica, Arial, sans-serif;
+$fontButton:			'Roboto', Helvetica, Arial, sans-serif;
+$fontWeightLight:		300;
+$fontWeightNormal:		400;
+$fontWeightBold:		700;
+
+$fs0l:				0.989rem;
+$fs1l:				1.6rem;
+$fs2l:				2.589rem;
+$fs3l:				4.189rem;
+$fs4l:				6.777rem;
+$fs5l:				10.966rem;
+
+/* colors */
+$black:				hsla(0, 0%, 10%, 1);
+$offWhite:			hsla(0, 0%, 95%, 1);
+$colorFontHeader:	hsla(38, 7%, 30%, 1);
+$colorFontMain:		hsla(38, 7%, 30%, 1);
+$turq:				hsla(180, 100%, 68%, 1);
+$pink:				hsla(318, 89%, 86%, 1);
+$transp:			hsla(0, 0%, 0%, 0);
+
+$xSml:		screen and (min-width:600px);
+$sml:		screen and (min-width:750px);
+$med:		screen and (min-width:900px);
+$lrg:		screen and (min-width:1200px);
+$xLrg:		screen and (min-width:1200px);
+$xLarge:	screen and (min-width:1400px);
+$xxLarge:	screen and (min-width:1600px);
+
+$linkTime:	0.5s;
+$transTime:	0.5s;
+
+/* Units */
+$topMargin: 			150px;
+
+$paddingBlockLrg: 		20px;
+$paddingBlockMed: 		15px;
+$paddingBlockSml: 		10px;
+$paddingElemLrg: 		10px;
+$paddingElemMed: 		7px;
+$paddingElemSml: 		5px;
+
+$marginBlockLrg: 		30px;
+$marginBlockMed: 		20px;
+$marginBlockSml: 		15px;
+$marginElemLrg: 		10px;
+$marginElemMed: 		7px;
+$marginElemSml: 		5px;
+
+$borderRadBlock:		5px;
+$borderRadElem:			5px;
+
+$liMarginLrg:			20px;
+$liMarginMed:			15px;
+$liMarginSml:			10px;
+
+/* fx */
+$boxShadow:			0 20px 60px hsla(180, 7%, 70%, 1);
+$modalShadow:		0 30px 75px hsla(55, 7%, 70%, 1);
+$uiBorderRad:		5px;
+

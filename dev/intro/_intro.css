@@ -1,0 +1,76 @@
+#intro-background-color {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	z-index: -1;
+}
+
+#intro-background-pattern {
+	position: absolute;
+	top:0;
+}
+
+#intro {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+#confetti-img, #confetti-video {
+	position: absolute;
+	bottom: 0;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+#intro-header {
+	position: absolute;
+	top:50%;
+	left:50%;
+	color: $pink;
+	text-align: center;
+	text-transform: uppercase;
+	transform-origin: center;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    line-height: 95%;
+    z-index: 1;
+    opacity: .98;
+    @media screen and (min-width:1400px) {
+    	font-size: 21.7424rem;
+    }
+    @media screen and (min-width:1600px) {
+    	font-size: 25.7424rem;
+    }
+    @media screen and (min-width:1800px) {
+    	font-size: 28.7072rem;
+    }
+    span {
+    	font-family: $fontHeader;
+    	font-weight: $fontWeightBold;
+    	display: block;
+    	font-size: 30%;
+    	letter-spacing: 0.47em;
+    	line-height: 30%;
+    	mix-blend-mode: difference;
+/*    	text-shadow: 1px 1px 15px hsla(0, 0%, 0%, .3); */
+    }
+}
+
+#intro-text {
+	position: absolute;
+	bottom: 50px;
+	right: 25px;
+	color: $offWhite;
+	padding:12.5px;
+	background-color: $black;
+	width: 700px;
+	transform-origin: center;
+	transform: rotate(-5deg);
+	opacity: 0;
+	span {
+		color:$turq;
+	}
+}
