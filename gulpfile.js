@@ -19,13 +19,6 @@ var gulp = require('gulp'),
 
 //copy media
 gulp.task('mediaCp', function() {
-	gulp.src('dev/**/**/*.{png,jpg,svg}')
-		.pipe(rename({dirname:''}))
-		.pipe(gulp.dest(out + '/m'))
-		.pipe(livereload());
-});
-
-gulp.task('mediaCp', function() {
 	gulp.src('dev/!(_common)**/**/*.{png,jpg,svg}')
 		.pipe(rename({dirname:''}))
 		.pipe(gulp.dest(out + '/m'));
@@ -52,7 +45,7 @@ gulp.task('tplCp', function() {
 				cssnano()
 		]))
 		.on('error', gutil.log)
-		.pipe(gulp.dest(out + '/c'))
+		.pipe(gulp.dest(out))
 		.pipe(livereload());
 	});
 
@@ -73,7 +66,7 @@ gulp.task('tplCp', function() {
 	gulp.task('watch', function() {
 		livereload.listen();
 		gulp.watch('dev/*/**.{png,jpg,svg}', ['mediaCp']);
-		gulp.watch('dev/*/**.{php,tpl,html}', ['tplCp']);
+		gulp.watch('dev/**/*.{php,tpl,html}', ['tplCp']);
 		gulp.watch('dev/**/*.css', ['cssPrep']);
 		gulp.watch('dev/**/*.js', ['jsConcat']);
 	});
