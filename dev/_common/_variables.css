@@ -37,6 +37,7 @@ $lrg:		screen and (min-width:1200px);
 $xLrg:		screen and (min-width:1200px);
 $xLarge:	screen and (min-width:1400px);
 $xxLarge:	screen and (min-width:1600px);
+$ie:		all and (-ms-high-contrast: none), (-ms-high-contrast: active);
 
 $linkTime:	0.5s;
 $transTime:	0.5s;
