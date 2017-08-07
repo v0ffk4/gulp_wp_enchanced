@@ -35,8 +35,8 @@ $sml:		screen and (min-width:750px);
 $med:		screen and (min-width:900px);
 $lrg:		screen and (min-width:1200px);
 $xLrg:		screen and (min-width:1200px);
-$xLarge:	screen and (min-width:1400px);
-$xxLarge:	screen and (min-width:1600px);
+$xLrg:		screen and (min-width:1400px);
+$xxLrg:		screen and (min-width:1600px);
 $ie:		all and (-ms-high-contrast: none), (-ms-high-contrast: active);
 
 $linkTime:	0.5s;
@@ -45,29 +45,28 @@ $transTime:	0.5s;
 /* Units */
 $topMargin: 			150px;
 
-$paddingBlockLrg: 		20px;
-$paddingBlockMed: 		15px;
-$paddingBlockSml: 		10px;
-$paddingElemLrg: 		10px;
-$paddingElemMed: 		7px;
-$paddingElemSml: 		5px;
+$padBlkLrg: 		20px;
+$padBlkMed: 		15px;
+$padBlkSml: 		10px;
+$padElemLrg: 		10px;
+$padElemMed: 		7px;
+$padElemSml: 		5px;
 
-$marginBlockLrg: 		30px;
-$marginBlockMed: 		20px;
-$marginBlockSml: 		15px;
-$marginElemLrg: 		10px;
-$marginElemMed: 		7px;
-$marginElemSml: 		5px;
+$marBlkLrg: 		30px;
+$marBlkMed: 		20px;
+$marBlkSml: 		15px;
+$marElemLrg: 		10px;
+$marElemMed: 		7px;
+$marElemSml: 		5px;
 
 $borderRadBlock:		5px;
 $borderRadElem:			5px;
 
-$liMarginLrg:			20px;
-$liMarginMed:			15px;
-$liMarginSml:			10px;
+$marLiLrg:			20px;
+$marLiMed:			15px;
+$marLiSml:			10px;
 
 /* fx */
 $boxShadow:			0 20px 60px hsla(180, 7%, 70%, 1);
 $modalShadow:		0 30px 75px hsla(55, 7%, 70%, 1);
 $uiBorderRad:		5px;
-
