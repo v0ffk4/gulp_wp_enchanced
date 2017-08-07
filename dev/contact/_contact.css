@@ -1,0 +1,34 @@
+#contact {
+	position: relative;
+	background: red;
+	width: 100%;
+	height: 100vh;
+	.gmap {
+		width: 100%;
+		height: 100%;
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+ .contact-address {
+ 	background: $black;
+ 	position: absolute;
+ 	transform: translateX(-50%);
+ 	box-shadow: $boxShadow;
+ 	padding: $padBlkLrg;
+ 	bottom: 15vh;
+ 	left: 50%;
+ 	h4 {
+ 		color: $pink;
+ 		text-align: center;
+ 		margin: 0 0 $marElemLrg;
+ 	}
+ 	p {
+ 		color: #fff;
+ 		margin: 0;
+ 		text-align: center;
+ 	}
+ }
