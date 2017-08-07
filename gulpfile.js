@@ -39,7 +39,7 @@ gulp.task('tplCp', function() {
 
 //compile SASS synthax / minify
 	gulp.task('cssPrep', function() {
-		gulp.src('dev/_common/style.css')
+		gulp.src('dev/_common/style.styl')
 			.pipe(stylus())
 			.pipe(postcss([
 				precss(),
