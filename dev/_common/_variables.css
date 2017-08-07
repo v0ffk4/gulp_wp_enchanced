@@ -43,7 +43,7 @@ $linkTime:	0.5s;
 $transTime:	0.5s;
 
 /* Units */
-$topMargin: 			150px;
+$marTop: 		150px;
 
 $padBlkLrg: 		20px;
 $padBlkMed: 		15px;
@@ -69,4 +69,3 @@ $marLiSml:			10px;
 /* fx */
 $boxShadow:			0 20px 60px hsla(180, 7%, 70%, 1);
 $modalShadow:		0 30px 75px hsla(55, 7%, 70%, 1);
-$uiBorderRad:		5px;
