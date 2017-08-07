@@ -14,12 +14,12 @@ $fontWeightLight:		300;
 $fontWeightNormal:		400;
 $fontWeightBold:		700;
 
-$fs0l:				0.989rem;
-$fs1l:				1.6rem;
-$fs2l:				2.589rem;
-$fs3l:				4.189rem;
-$fs4l:				6.777rem;
-$fs5l:				10.966rem;
+$fs0Lrg:				0.989rem;
+$fs1Lrg:				1.6rem;
+$fs2Lrg:				2.589rem;
+$fs3Lrg:				4.189rem;
+$fs4Lrg:				6.777rem;
+$fs5Lrg:				10.966rem;
 
 /* colors */
 $black:				hsla(0, 0%, 10%, 1);

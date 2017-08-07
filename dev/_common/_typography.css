@@ -1,33 +1,17 @@
-.font-small {
-	font-size: 0.9889rem;
-}
-
-.font-normal {
-	font-size: 1.6rem;
-}
-
-.font-medium {
-	font-size: 2.5888rem;
-}
-
-.font-large {
-	font-size: 4.1887rem;
-}
-
 p, ul {
 	font-family: $fontMain;
-	font-size: 1.6rem;
+	font-size: $fs1Lrg;
 	font-weight: $fontWeightNormal;
 	line-height: 160%;
 	hyphens: auto;
 }
 
 p:first-of-type {
-	margin-top:0;
+	margin: 0 0 $marElemLrg 0;
 }
 
 p:last-of-type {
-	margin-bottom:3.2rem;
+	margin: 0 0 $marBlkLrg 0;
 }
 
 span {
@@ -38,40 +22,41 @@ h1, h2, h3,
 h4, h5, h6 {
 	color: $colorFontHeader;
 	font-family: $fontHeader;
-	margin: 1.6rem auto 0.4rem auto;
 }
 
 h6 {
-	font-size: 1.6rem;
+	font-size: $fs1Lrg;
 	font-weight: $fontWeightNormal;
-	margin: 1.6rem auto 0.4rem auto;
+	margin: $fs1Lrg 0 0 0;
 }
 
 h5 {
-	font-size: 2.5888rem;
-	font-weight: $fontWeightNormal;
-	margin: 1.6rem auto 0.4rem auto;
+	font-size: $fs1Lrg;
+	font-weight: $fontWeightBold;
+	margin: $fs1Lrg 0 0 0;
 }
 
 h4 {
-	font-size: 4.1887rem;
+	font-size: $fs2Lrg;
 	font-weight: $fontWeightNormal;
+	margin: $fs2Lrg 0 0 0;
 }
 
 h3 {
-	font-size: 4.1887rem;
-	font-weight: $fontWeightBold;
+	font-size: $fs3Lrg;
+	font-weight: $fontWeightNormal;
+	margin: $fs3Lrg 0 0 0;
 }
 
 h2 {
-	font-size: 6.7773rem;
+	font-size: $fs4Lrg;
 	font-weight: $fontWeightNormal;
-	margin: 1.6rem auto 0.4rem auto;
+	margin: $fs4Lrg 0 0 0;
 }
 
 h1 {
-	font-size: 10.9656rem;
+	font-size: $fs5Lrg;
 	font-weight: $fontWeightNormal;
-	margin: 1.6rem auto 0.4rem auto;
+	margin: $fs5Lrg 0 0 0;
 }
 
