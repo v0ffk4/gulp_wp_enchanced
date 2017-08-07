@@ -69,7 +69,7 @@ gulp.task('tplCp', function() {
 		livereload.listen();
 		gulp.watch('dev/*/**.{png,jpg,svg}', ['mediaCp']);
 		gulp.watch('dev/**/*.{php,tpl,html}', ['tplCp']);
-		gulp.watch('dev/**/*.css', ['cssPrep']);
+		gulp.watch('dev/**/*.styl', ['cssPrep']);
 		gulp.watch('dev/**/*.js', ['jsConcat']);
 	});
 
