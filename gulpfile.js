@@ -9,6 +9,7 @@ var gulp = require('gulp'),
 	autoprefixer = require('autoprefixer'),
 	cssnano = require('cssnano'),
 	precss = require('precss'),
+	stylus = require('gulp-stylus'),
 
 	//js processing
 	concat = require('gulp-concat'),
@@ -39,6 +40,7 @@ gulp.task('tplCp', function() {
 //compile SASS synthax / minify
 	gulp.task('cssPrep', function() {
 		gulp.src('dev/_common/style.css')
+			.pipe(stylus())
 			.pipe(postcss([
 				precss(),
 				autoprefixer(),
