@@ -136,7 +136,7 @@ function load() {
 
 
 	//draw a map
-	var map = new google.maps.Map(document.getElementById("js_Gmap"), mapOptions);
+	var map = new google.maps.Map(document.getElementById("jsGmap"), mapOptions);
 
 	//draw infowindow
 	var infowindow = new google.maps.InfoWindow({
