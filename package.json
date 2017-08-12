@@ -21,11 +21,11 @@
     "gulp-livereload": "^3.8.1",
     "gulp-open": "^2.0.0",
     "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-server-livereload": "^1.9.2",
     "gulp-stylus": "^2.6.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "precss": "^2.0.0"
+    "gulp-util": "^3.0.8"
   }
 }

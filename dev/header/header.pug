@@ -1,0 +1,16 @@
+doctype html(lang='ru')
+html
+head
+	title Событийная студия 2Queen
+	meta(charset='utf-8')
+	meta(name='viewport', content='width=device-width, initial-scale=1')
+	//-loader css here for faster loading
+	include loader.css.include
+	link(rel='stylesheet', type='text/css', href!='<?php bloginfo( template_directory ); ?>/style.css')
+	link(rel='stylesheet', type='text/css', href!='<?php bloginfo( template_directory ); ?>/main.css')
+<body>
+	//-loader
+	.loader#jsLoader.active
+		include media/loader.svg.include
+	include loader.js.include
+	<div id="wrapper">
