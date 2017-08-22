@@ -36,10 +36,16 @@ gulp.task('mediaCp', function() {
 
 //prepare PUG
 gulp.task('tplPrep', function() {
-	gulp.src('dev/**/*.{html,tpl,php}')
+	gulp.src([
+		"!dev/**/inc/*.{html,tpl,php}",
+		'dev/**/*.{html,tpl,php}'
+	])
 		.pipe(rename({dirname:''}))
 		.pipe(gulp.dest(out))
-	gulp.src('dev/**/*.pug')
+	gulp.src([
+		"!dev/**/inc/*.pug",
+		'dev/**/*.pug'
+	])
 		.pipe(pug())
 		.pipe(rename({dirname:''}))
 		.pipe(rename({extname:'.php'}))
@@ -49,8 +55,10 @@ gulp.task('tplPrep', function() {
 
 //prepare CSS
 	gulp.task('cssPrep', function() {
-		gulp.src('dev/**!(inc)/!(_)*.styl')
-//		gulp.src('dev/**/!(_)*.styl')
+		gulp.src([
+			"!dev/**/inc/*.styl",
+			"dev/**/!(_)*.styl",
+		])
 			.pipe(stylus())
 			.pipe(postcss([
 				autoprefixer(),
