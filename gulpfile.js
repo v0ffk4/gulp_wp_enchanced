@@ -34,7 +34,7 @@ gulp.task('mediaCp', function() {
 		.pipe(livereload());
 });
 
-//prepare templates
+//prepare PUG
 gulp.task('tplPrep', function() {
 	gulp.src('dev/**/*.{html,tpl,php}')
 		.pipe(rename({dirname:''}))
@@ -47,10 +47,10 @@ gulp.task('tplPrep', function() {
 		.pipe(livereload());
 });
 
-//compile Stylus synthax / minify
+//prepare CSS
 	gulp.task('cssPrep', function() {
-		gulp.src('dev/**/*.styl'),
-		gulp.src('dev/**/!(_)*.styl')
+		gulp.src('dev/**!(inc)/!(_)*.styl')
+//		gulp.src('dev/**/!(_)*.styl')
 			.pipe(stylus())
 			.pipe(postcss([
 				autoprefixer(),
@@ -67,6 +67,8 @@ gulp.task('tplPrep', function() {
 	//prepare javascript
 	gulp.task('jsPrep', function(){
 		gulp.src([
+			'dev/**/*.js',
+			'!dev/**/inc/*.js',
 			'dev/**/_!(script)*.js',
 			'dev/_common/_script.js'
 		])
@@ -81,6 +83,7 @@ gulp.task('tplPrep', function() {
 
 		gulp.src([
 			'dev/**/*.js',
+			'!dev/**/inc/*.js',
 			'!dev/**/_*.js'
 		])
 			.pipe(uglify())
