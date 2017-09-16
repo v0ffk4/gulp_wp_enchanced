@@ -22,7 +22,9 @@ var gulp = require('gulp'),
 
 //copy media
 gulp.task('mediaCp', function() {
-	gulp.src('dev/!(_common)**/**/*.{png,jpg,svg}')
+	gulp.src([
+		'dev/!(_common)**/**/*.{png,jpg,svg}'
+	])
 		.pipe(rename({dirname:''}))
 		.pipe(gulp.dest(out + '/m'));
 	gulp.src('dev/_common/**/*.{png,jpg,svg}')
